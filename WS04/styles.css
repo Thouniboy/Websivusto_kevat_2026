@@ -126,6 +126,14 @@ table {
         background-color: white;
       }
       .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+      .filter-image {
         width: 200px;
         height: auto;
         filter: grayscale(100%);
