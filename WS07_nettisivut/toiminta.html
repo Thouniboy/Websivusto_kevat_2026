@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bitcoin-opas – Miten Bitcoin toimii?</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="responsive-nav">
+    <button class="menu-toggle">☰ Menu</button>
+    <ul class="nav-list">
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="bitcoin.html">Mitä on Bitcoin?</a></li>
+      <li><a href="toiminta.html">Miten Bitcoin toimii?</a></li>
+      <li><a href="aloita.html">Miten aloittaa?</a></li>
+    </ul>
+  </nav>
+
+  <section id="toiminta">
+    <h2>Miten Bitcoin toimii?</h2>
+    <h3>Lohkoketju — bitcoinin selkäranka</h3>
+    <p>Bitcoin toimii teknologian avulla, jota kutsutaan lohkoketjuksi. Kuulostaa monimutkaiselta, mutta idea on yksinkertainen: se on julkinen kirjanpito, johon kirjataan jokainen bitcoin-siirto kautta aikojen.</p>
+    <p>Kuvittele iso muistikirja, johon kaikki voivat katsoa mutta johon kukaan ei voi tehdä väärennöksiä. Joka kerta kun bitcoin vaihtaa omistajaa, tämä tapahtuma lisätään muistikirjaan — pysyvästi ja kaikkien nähtäväksi.</p>
+    <p>Kirjanpitoa ylläpitävät tuhannet tietokoneet ympäri maailmaa samanaikaisesti. Tätä kutsutaan louhinnaksi. Louhijat tarkistavat siirrot ja saavat palkkioksi pieniä määriä bitcoinia.</p>
+    <h3>Miksi tämä on turvallista?</h3>
+    <p>Koska tietoa ei säilytetä yhdessä paikassa, sitä on käytännössä mahdoton hakkeroida tai väärentää. Kaikki tietokoneet pitäisi murtaa samanaikaisesti — se on lähes mahdotonta.</p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-list').classList.toggle('open');
+    });
+  </script>
+  <div class="alert alert-danger" role="alert" style="background-color: #ff0000; border-color: #cc0000; color: #ffffff;">
+    <strong>Varoitus!</strong> Tämä sisältö on tarkoitettu yleiseksi informaatioksi eikä sitä tule tulkita sijoitus-, vero- tai talousneuvonnaksi. Kryptovaluuttoihin sijoittamiseen liittyy merkittäviä riskejä ja voit menettää sijoittamasi pääoman osittain tai kokonaan.
+  </div>
+
+</body>
+</html>

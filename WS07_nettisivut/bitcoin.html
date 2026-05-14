@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bitcoin-opas  Mitä on Bitcoin?</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div style="position: fixed; top: 20px; right: 20px; z-index: 9999;">
+    <div class="spinner-border" role="status" style="color: #f72c08;">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <nav class="responsive-nav">
+    <button class="menu-toggle">☰ Menu</button>
+    <ul class="nav-list">
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="bitcoin.html">Mitä on Bitcoin?</a></li>
+      <li><a href="toiminta.html">Miten Bitcoin toimii?</a></li>
+      <li><a href="aloita.html">Miten aloittaa?</a></li>
+    </ul>
+  </nav>
+
+  <section id="bitcoin">
+    <h2>Mitä on Bitcoin?</h2>
+    <p>Bitcoin on digitaalinen valuutta — eli raha, jota ei ole fyysisesti olemassa kolikoina tai seteleinä. Se luotiin vuonna 2009 henkilön tai ryhmän toimesta, joka tunnetaan nimellä Satoshi Nakamoto. Kuka tämä henkilö oikeasti on, ei tiedetä vieläkään.</p>
+    <p>Bitcoinin tärkein ominaisuus on se, että sen takana ei ole yhtään pankkia, hallitusta tai yritystä. Perinteinen raha kulkee pankkien kautta — bitcoin sen sijaan siirtyy suoraan ihmiseltä toiselle internetin välityksellä.</p>
+    <p>Bitcoineja on olemassa rajoitettu määrä: koskaan ei luoda enempää kuin 21 miljoonaa bitcoinia. Tämä niukkuus on yksi syy siihen, miksi moni pitää bitcoinia arvokkaana.</p>
+    <p>Avainkäsitteet:</p>
+    <ol>
+      <li>Desentralisoitu — ei keskitettyä hallitsijaa</li>
+      <li>Rajallinen määrä — maksimissaan 21 miljoonaa kolikkoa</li>
+      <li>Digitaalinen — olemassa vain verkossa</li>
+    </ol>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-list').classList.toggle('open');
+    });
+  </script>
+<div class="alert alert-danger" role="alert" style="background-color: #ff0000; border-color: #cc0000; color: #ffffff;">
+    <strong>Varoitus!</strong> Tämä sisältö on tarkoitettu yleiseksi informaatioksi eikä sitä tule tulkita sijoitus-, vero- tai talousneuvonnaksi. Kryptovaluuttoihin sijoittamiseen liittyy merkittäviä riskejä ja voit menettää sijoittamasi pääoman osittain tai kokonaan.
+  </div>
+</body>
+</html>

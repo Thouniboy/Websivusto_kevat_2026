@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bitcoin-opas – Miten aloittaa?</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="responsive-nav">
+    <button class="menu-toggle">☰ Menu</button>
+    <ul class="nav-list">
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="bitcoin.html">Mitä on Bitcoin?</a></li>
+      <li><a href="toiminta.html">Miten Bitcoin toimii?</a></li>
+      <li><a href="aloita.html">Miten aloittaa?</a></li>
+    </ul>
+  </nav>
+<div style="position: fixed; top: 20px; right: 20px; z-index: 9999; display: flex; align-items: center; gap: 8px;">
+  <span class="badge text-bg-warning">Muista lukea alapalkin varoitus!</span>
+  </div>
+</div>
+  <section id="aloita">
+    <h2>Miten aloittaa?</h2>
+    <p>Jos bitcoin alkaa kiinnostaa käytännössä, tässä on lyhyt katsaus siihen, miten ihmiset yleensä aloittavat.</p>
+    <ol>
+      <li><strong>Hanki digitaalinen lompakko</strong> - Bitcoin säilytetään digitaalisessa lompakossa. Lompakolla voit lähettää, vastaanottaa ja säilyttää bitcoinia.</li>
+      <li><strong>Valitse vaihtopalvelu</strong> — Bitcoinia ostetaan yleensä kryptovaluuttapörsseistä, kuten Coinbase tai Binance.</li>
+      <li><strong>Aloita pienesti</strong> — Bitcoin on tunnettu voimakkaista hinnannousuista — ja laskuista. Aloita summalla, jonka häviäminen ei aiheuta taloudellista haittaa.</li>
+      <li><strong>Opi ensin, sijoita sitten</strong> — Paras tapa aloittaa on opiskella aihetta ennen kuin sijoittaa yhtään euroa.</li>
+    </ol>
+    <p><strong>Huom!</strong> Tämä sivusto ei anna sijoitusneuvoja. Bitcoin sisältää riskejä ja hinnat voivat vaihdella voimakkaasti.</p>
+
+    <h3>Jos kiinnostuit aiheesta, jätä yhteystietosi alle:</h3>
+    <form>
+      <label for="nimi">Nimi:</label>
+      <input type="text" id="nimi" name="nimi" /><br /><br />
+      <label for="email">Sähköposti:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Lähetä" />
+    </form>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-list').classList.toggle('open');
+    });
+  </script>
+<div class="alert alert-danger" role="alert" style="background-color: #ff0000; border-color: #cc0000; color: #ffffff;">
+    <strong>Varoitus!</strong> Tämä sisältö on tarkoitettu yleiseksi informaatioksi eikä sitä tule tulkita sijoitus-, vero- tai talousneuvonnaksi. Kryptovaluuttoihin sijoittamiseen liittyy merkittäviä riskejä ja voit menettää sijoittamasi pääoman osittain tai kokonaan.
+  </div>
+</body>
+</html>

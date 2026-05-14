@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bitcoin-opas – Etusivu</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="responsive-nav">
+    <button class="menu-toggle">☰ Menu</button>
+    <ul class="nav-list">
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="bitcoin.html">Mitä on Bitcoin?</a></li>
+      <li><a href="toiminta.html">Miten Bitcoin toimii?</a></li>
+      <li><a href="aloita.html">Miten aloittaa?</a></li>
+    </ul>
+  </nav>
+
+  <h1>Tervetuloa Bitcoinin aloittelijan oppaaseen!</h1>
+
+  <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./images/3dbitcoin.jpg" class="rounded me-2" alt="Bitcoin" style="width: 20px; height: 20px;">
+        <strong class="me-auto">Bitcoin-opas</strong>
+        <small>Juuri nyt</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">Tervetuloa Bitcoin-oppaaseen!</div>
+    </div>
+  </div>
+
+  <section id="etusivu">
+    <h2>Etusivu</h2>
+    <p>Oletko kuullut bitcoinista mutta et tiedä mistä se oikeasti on kyse? Olet oikeassa paikassa. Tämä sivusto on tehty juuri sinulle — ihmiselle, joka haluaa ymmärtää bitcoinin perusteet ilman turhaa teknistä jargonia.</p>
+    <p>Bitcoin on noussut yhdeksi aikamme puhutuimmista aiheista. Sitä käsitellään uutisissa, kouluissa ja kahvipöydissä — mutta harvoin kukaan selittää selkeästi, mitä se oikeasti tarkoittaa.</p>
+    <p>Aloita lukeminen alta ja tutustu bitcoinin maailmaan omaan tahtiisi.</p>
+    <img src="./images/3dbitcoin.jpg" alt="Bitcoin" class="responsive-image">
+
+    <div class="card" style="width: 18rem; margin-top: 20px;">
+      <img src="./images/CMC.jpg" class="card-img-top" alt="Coinmarketcap">
+      <div class="card-body">
+        <h4 class="card-title">Coinmarketcap</h4>
+        <p class="card-text">Tästä voit tarkistaa Bitcoinin hinnan sekä muiden kryptovaluuttojen hinnat.</p>
+        <a href="https://coinmarketcap.com/" class="btn btn-primary" target="_blank">Tarkista Bitcoinin hinta</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="alert alert-danger" role="alert" style="background-color: #ff0000; border-color: #cc0000; color: #ffffff;">
+    <strong>Varoitus!</strong> Tämä sisältö on tarkoitettu yleiseksi informaatioksi eikä sitä tule tulkita sijoitus-, vero- tai talousneuvonnaksi. Kryptovaluuttoihin sijoittamiseen liittyy merkittäviä riskejä ja voit menettää sijoittamasi pääoman osittain tai kokonaan.
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const toast = new bootstrap.Toast(document.querySelector('.toast'));
+    toast.show();
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-list').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
+
